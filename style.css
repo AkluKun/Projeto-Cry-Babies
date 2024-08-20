@@ -1,0 +1,123 @@
+header{
+    background-image: url(./imagens/fundo.webp);
+}
+
+header nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+header .navbar ul {
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar ul li {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+    margin: 10px;
+    list-style: none;
+}
+
+header .navbar ul li a {
+    text-decoration-line: none;
+    color: black;
+    font-size: larger;
+}
+
+header .navbar ul li a:hover {
+    text-decoration-line: none;
+    color: hotpink;
+}
+
+section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section div.vale {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section div.fantasy {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section div.tutti-frutti{
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section div.storyland {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section div.iceworld {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section div.especiais {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/imgteste.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.section .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 25%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section .row .card {
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+}
+
+.section .row img {
+    border-radius: 0.5cm;
+    max-width: 15rem;
+}
