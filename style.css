@@ -1,5 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-image: url(./imagens/fundo.webp);
+    display:inline-block;
+    /* position: fixed; */
+    width: 100%;
 }
 
 header nav {
@@ -28,6 +35,7 @@ header .navbar ul li a {
     text-decoration-line: none;
     color: black;
     font-size: larger;
+   
 }
 
 header .navbar ul li a:hover {
@@ -46,38 +54,55 @@ section h1 {
 section div.vale {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/imgteste.jpeg);
+    background-image: url(./imagens/Vale/FundoVale.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 section div.fantasy {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/imgteste.jpeg);
+    background-image: url(./imagens/Fantasy/FundoFantasy.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 section div.tutti-frutti{
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/imgteste.jpeg);
+    background-image: url(./imagens/Tutti-Frutti/FundoTuttiFrutti.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-section div.storyland {
+section div.happyflowers {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/imgteste.jpeg);
+    background-image: url(./imagens/Especiais/HappyFlower/FundoHappyFlowers.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 section div.iceworld {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/imgteste.jpeg);
+    background-image: url(./imagens/IceWorld/FundoIceWorld.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+section div.tropical {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/Especiais/Tropical/FundoTropical.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section div.hallowen {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/Especiais/Hallowen/FundoHallowen.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 section div.especiais {
     display: block;
     min-height: 1000px;
@@ -117,7 +142,13 @@ section div.especiais {
     max-width: 15rem;
 }
 
+.section .vale .row img {
+    border-radius: 0.5cm;
+    min-width: 13rem;
+    max-width: 13rem;
+}
 .section .row img {
     border-radius: 0.5cm;
+    min-width: 15rem;
     max-width: 15rem;
 }
