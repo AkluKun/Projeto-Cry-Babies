@@ -1,41 +1,64 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-header{
-    background-image: url(./imagens/fundo.webp);
-    display:inline-block;
-    /* position: fixed; */
-    width: 100%;
+/* Adicionar padding ao corpo para garantir que o conteúdo não fique atrás do header */
+body {
+    padding-top: 5%;
+    /* Ajuste este valor para o tamanho do seu header */
 }
 
+header {
+    background-image: url(./imagens/fundo.webp);
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out; /* Transição suave para aparecer/desaparecer */
+    transform: translateY(-100%); /* Inicialmente oculto acima da tela */
+}
+
+/* Classe para exibir o header */
+.header-visible {
+    transform: translateY(0); /* Exibe o header */
+}
+
+/* CSS para a navegação */
+.navbar {
+    align-items: center;
+}
+
+img {
+    height: auto;
+    /* Ajuste a altura do logo conforme necessário */
+}
+
+
+
 header nav {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
 }
 
-header .navbar ul {
-    align-items: center;
-    justify-content: center;
-}
-
-header .navbar ul li {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2px;
-    margin: 10px;
+/* CSS para a lista de navegação */
+.navbar ul {
     list-style: none;
+    display: flex;
 }
 
-header .navbar ul li a {
+.navbar ul li {
+    margin: 0 10px;
+    /* Ajuste o espaçamento entre os itens da lista */
+}
+
+.navbar ul li a {
     text-decoration-line: none;
     color: black;
     font-size: larger;
-   
+
 }
 
 header .navbar ul li a:hover {
@@ -48,7 +71,7 @@ section h1 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 section div.vale {
@@ -58,6 +81,7 @@ section div.vale {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 section div.fantasy {
     display: block;
     min-height: 1000px;
@@ -65,20 +89,31 @@ section div.fantasy {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-section div.tutti-frutti{
+
+section div.tutti-frutti {
     display: block;
     min-height: 1000px;
     background-image: url(./imagens/Tutti-Frutti/FundoTuttiFrutti.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-section div.happyflowers {
+
+section div.storyland {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/Especiais/HappyFlower/FundoHappyFlowers.png);
+    background-image: url(./imagens/StoryLand/FundoStoryLand.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+section div.happyflowers {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/HappyFlower/FundoHappyFlowers.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 section div.iceworld {
     display: block;
     min-height: 1000px;
@@ -87,18 +122,43 @@ section div.iceworld {
     background-size: 100%;
 }
 
-section div.tropical {
+section div.hallowen {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/Especiais/Tropical/FundoTropical.png);
+    background-image: url(./imagens/Hallowen/FundoHallowen.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-section div.hallowen {
+section div.tropical {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/Especiais/Hallowen/FundoHallowen.png);
+    background-image: url(./imagens/Tropical/FundoTropical.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+section div.golden {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/Golden/FundoGolden.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section div.Pink{
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/Pink/FundoPink.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section div.frozenfruit {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/FrozenFruit/FundoFrozenFruit.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -147,6 +207,7 @@ section div.especiais {
     min-width: 13rem;
     max-width: 13rem;
 }
+
 .section .row img {
     border-radius: 0.5cm;
     min-width: 15rem;
