@@ -1,11 +1,15 @@
+@font-face{
+    font-family: StarBorn;
+    src: url(./font/cartoon_2_us/Cartoon2US-Regular.ttf);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Adicionar padding ao corpo para garantir que o conteúdo não fique atrás do header */
 body {
     padding-top: 5%;
-    /* Ajuste este valor para o tamanho do seu header */
+    cursor: url("cursor.png") , auto;
 }
 
 header {
@@ -33,12 +37,41 @@ img {
     /* Ajuste a altura do logo conforme necessário */
 }
 
+img.banner{
+    margin-left: 70%;
+    margin-top:5%;
+    min-width: 30rem;
+    max-width: 30rem;
+    border-radius: 0.5cm;
+}
+/* section div.info p{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}*/
 
+section div.info{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.info img.banner, p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* img.banner{
+    display: flex;
+    margin: 2cm;
+    min-width: 30rem;
+    max-width: 30rem;
+    border-radius: 0.5cm;
+} */
 
 header nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     width: 100%;
 }
@@ -50,7 +83,7 @@ header nav {
 }
 
 .navbar ul li {
-    margin: 0 10px;
+    margin: 10px;
     /* Ajuste o espaçamento entre os itens da lista */
 }
 
@@ -66,12 +99,25 @@ header .navbar ul li a:hover {
     color: hotpink;
 }
 
+section div div h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: start;
+}
+
 section h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: StarBorn , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */, ;
+    font-size: 50px;
+    background:-webkit-linear-gradient(#FFDEE9 ,#B5FFFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000;
 }
 
 section div.vale {
@@ -122,6 +168,14 @@ section div.iceworld {
     background-size: 100%;
 }
 
+section div.frozenfruit {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/FrozenFruit/FundoFrozenFruit.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 section div.hallowen {
     display: block;
     min-height: 1000px;
@@ -138,6 +192,13 @@ section div.tropical {
     background-size: 100%;
 }
 
+section div.tropical2 {
+    display: block;
+    min-height: 1000px;
+    background-image: url(./imagens/Tropical/FundoTropical2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 section div.golden {
     display: block;
@@ -155,10 +216,10 @@ section div.Pink{
     background-size: 100%;
 }
 
-section div.frozenfruit {
+section div.littlechanges {
     display: block;
     min-height: 1000px;
-    background-image: url(./imagens/FrozenFruit/FundoFrozenFruit.png);
+    background-image: url(./imagens/LittleChanges/FundoLittleChanges.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -213,3 +274,38 @@ section div.especiais {
     min-width: 15rem;
     max-width: 15rem;
 }
+
+/* .info {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posição acima do texto */
+    /* left: 50%;
+    transform: translateX(-50%);
+    width: 160px; 
+}
+
+.tooltip::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.info:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+} */
