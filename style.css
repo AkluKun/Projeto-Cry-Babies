@@ -56,6 +56,13 @@ section div.info{
     align-items: center;
 }
 
+section div.info h2, p{
+    /* display: inline-block; */
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
 section div.info img.banner, p{
     display: inline-block;
     vertical-align: top;
