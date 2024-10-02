@@ -38,10 +38,10 @@ img {
 }
 
 img.banner{
-    margin-left: 70%;
+    margin-left: 60%;
     margin-top:5%;
     min-width: 30rem;
-    max-width: 30rem;
+    max-width: 50rem;
     border-radius: 0.5cm;
 }
 /* section div.info p{
